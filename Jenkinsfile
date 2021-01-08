@@ -1,5 +1,3 @@
-1.Declarative Pipeline
-
 pipeline {
 agent any
 stages {
