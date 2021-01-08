@@ -9,7 +9,7 @@ pipipeline {
 				   '''	
 			} 
 		}
-	stage ('deploy ') {
+	stage ('deploy') {
 		parallel {
 		stage ('deploy 1') {
 			steps {
