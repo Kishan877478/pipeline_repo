@@ -29,6 +29,7 @@ pipipeline {
                         }
                 }
 }
+}
 		stage ('test') {
 			steps {
 				sh '''
