@@ -1,4 +1,4 @@
-pipeline {
+pipipeline {
 	agent any 
 	stages {
 		stage ('build') {
@@ -9,6 +9,7 @@ pipeline {
 				   '''	
 			} 
 		}
+	stage ('deploy ') {
 		parallel {
 		stage ('deploy 1') {
 			steps {
@@ -27,7 +28,7 @@ pipeline {
                                    '''
                         }
                 }
-
+}
 		stage ('test') {
 			steps {
 				sh '''
@@ -38,3 +39,4 @@ pipeline {
 		}
 	}
 }
+
